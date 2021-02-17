@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "PT Sans"
+  src: url(<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">);
+}
+body{
+  background: url('images/thunderstorm.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: left;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: #f2f5f9;
+}
+/*menu de navigation*/
+.barheader{
+  width: 100%;
+  background-color: rgba(0,0,0,.2);
+}
+.barheader ul{
+  text-align: center;
+}
+.barheader ul li{
+  list-style: none;
+  display: inline-block;
+}
+.barheader ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 25px;
+  transition: all ease 0.5s;
+  color: #f2f5f9;
+}
+/*effet au passage de la souris*/
+.barheader ul li a:hover{
+  margin: 0;
+  background-color: rgba(0,0,0,.5);
+}
+/*Fond de la zone central*/
+.zone-centre{
+  margin: 50px 250px;
+  background-color: rgba(0,0,0,.3);
+  width: 70%;
+  height: 500px;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/*texte de la zone central*/
+ h1 {
+  font-size: 21px;
+}
+h2{
+  font-size:16px;
+}
+p {
+  font-size: 11px;
+}
+.experiences li{
+  font-size: 11px;
+  display: inline-block;
+  padding: 3px;
+  list-style-type: circle;
+}
+
+/*************PAGE index.html**********/
+/* logo Flavie FRANCOIS index.html*/
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.logo a{
+  position: relative;
+  text-decoration: none;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+  color: #f2f5f9;
+  font-size: 50px;
+}
+/* animation logo Flavie FRANCOIS index.html*/
+.logo a:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+/*   width: 100%;
+  height: 100%; */
+  width: 0;
+  height: 0;
+  background: transparent;
+/*   border: 2px solid #f2f5f9; */
+  border: 2px solid transparent;
+}
+.logo a:hover:before {
+  animation: animate-border 1s linear forwards;
+}
+@keyframes animate-border {
+  0% {
+    width: 0;
+    height: 0;
+/* border: 2px solid transparent; */
+    border-top-color: #f2f5f9;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+/*border: 2px solid#f2f5f9; */
+    border-top-color: #f2f5f9;
+    border-right-color: #f2f5f9;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+/*border: 2px solid #f2f5f9; */
+    border-top-color: #f2f5f9;
+    border-right-color: #f2f5f9;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+.logo a:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+/*width: 100%;
+  height: 100%; */
+  width: 0;
+  height: 0;
+  background: transparent;
+/* border: 2px solid #f2f5f9; */
+  border: 2px solid transparent;
+}
+.logo a:hover:after {
+  animation: animate-border-2 1s linear forwards;
+  animation-delay: 1s;
+}
+@keyframes animate-border-2 {
+  0% {
+    width: 0;
+    height: 0;
+/*border: 2px solid transparent; */
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #f2f5f9;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+/*border: 2px solid #f2f5f9; */
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #f2f5f9;
+    border-left-color: #f2f5f9;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+/*border: 2px solid #f2f5f9; */
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #f2f5f9;
+    border-left-color: #f2f5f9;
+  }
+}
+/********* Page formulaire de contact***************/
+.contactform{
+
+}
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+input {
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  color: #f2f5f9;
+  border: solid 1px #f2f5f9;
+  border-bottom: none;
+  }
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #f2f5f9;
+  border: solid 1px #f2f5f9;
+}
+  #submit {
+  width: 502px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  color: #f2f5f9;
+  outline:none;
+  cursor: pointer;
+  border: solid 1px #f2f5f9;
+  border-top: none;
+}
