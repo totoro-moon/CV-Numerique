@@ -1,7 +1,6 @@
 @font-face {
   font-family: "PT Sans"
-  src: url(<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">);
+  src: url(<link rel="preconnect" href="https://fonts.gstatic.com">);
 }
 body{
   background: url('images/thunderstorm.jpg') no-repeat;
@@ -10,9 +9,9 @@ body{
   background-position: left;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 ;
   padding: 0;
-  color: #f2f5f9;
+  color: #fcfcfc;
 }
 /*menu de navigation*/
 .barheader{
@@ -21,6 +20,7 @@ body{
 }
 .barheader ul{
   text-align: center;
+  margin: 0;
 }
 .barheader ul li{
   list-style: none;
@@ -33,8 +33,8 @@ body{
   letter-spacing: 1px;
   font-weight: 300;
   padding: 25px;
-  transition: all ease 0.5s;
-  color: #f2f5f9;
+  transition: all ease 0.3s;
+  color: #fcfcfc;
 }
 /*effet au passage de la souris*/
 .barheader ul li a:hover{
@@ -44,30 +44,38 @@ body{
 /*Fond de la zone central*/
 .zone-centre{
   margin: 50px 250px;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.2);
   width: 70%;
-  height: 500px;
+  height: 520px;
   padding: 10px;
   text-align: center;
   letter-spacing: 1px;
 }
 /*texte de la zone central*/
- h1 {
+ h1{
   font-size: 21px;
+  color: #
 }
 h2{
   font-size:16px;
 }
-p {
-  font-size: 11px;
-}
-.experiences li{
-  font-size: 11px;
-  display: inline-block;
-  padding: 3px;
-  list-style-type: circle;
-}
+p{
+  font-size: 13px;
 
+}
+li{
+  font-size: 13px;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+}
+/*******grid de la page compétence*********/
+.grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: left;
+  margin-left: 200px
+}
 /*************PAGE index.html**********/
 /* logo Flavie FRANCOIS index.html*/
 .logo{
@@ -84,32 +92,28 @@ p {
   text-align: center;
   line-height: 100px;
   display: inline-block;
-  color: #f2f5f9;
+  color: #fcfcfc;
   font-size: 50px;
 }
 /* animation logo Flavie FRANCOIS index.html*/
-.logo a:before {
+.logo a:before{
   content: '';
   position: absolute;
   top: -2px;
   left: -2px;
-/*   width: 100%;
-  height: 100%; */
   width: 0;
   height: 0;
   background: transparent;
-/*   border: 2px solid #f2f5f9; */
   border: 2px solid transparent;
 }
-.logo a:hover:before {
+.logo a:hover:before{
   animation: animate-border 1s linear forwards;
 }
-@keyframes animate-border {
+@keyframes animate-border{
   0% {
     width: 0;
     height: 0;
-/* border: 2px solid transparent; */
-    border-top-color: #f2f5f9;
+    border-top-color: #fcfcfc;
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent;
@@ -117,87 +121,77 @@ p {
   50% {
     width: 100%;
     height: 0;
-/*border: 2px solid#f2f5f9; */
-    border-top-color: #f2f5f9;
-    border-right-color: #f2f5f9;
+    border-top-color: #fcfcfc;
+    border-right-color: #fcfcfc;
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
   100% {
     width: 100%;
     height: 100%;
-/*border: 2px solid #f2f5f9; */
-    border-top-color: #f2f5f9;
-    border-right-color: #f2f5f9;
+    border-top-color: #fcfcfc;
+    border-right-color: #fcfcfc;
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
 }
-.logo a:after {
+.logo a:after{
   content: '';
   position: absolute;
   top: -2px;
   left: -2px;
-/*width: 100%;
-  height: 100%; */
+  height: 100%;
   width: 0;
   height: 0;
   background: transparent;
-/* border: 2px solid #f2f5f9; */
   border: 2px solid transparent;
 }
-.logo a:hover:after {
+.logo a:hover:after{
   animation: animate-border-2 1s linear forwards;
   animation-delay: 1s;
 }
-@keyframes animate-border-2 {
+@keyframes animate-border-2{
   0% {
     width: 0;
     height: 0;
-/*border: 2px solid transparent; */
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: #f2f5f9;
+    border-left-color: #fcfcfc;
   }
   50% {
     width: 0;
     height: 100%;
-/*border: 2px solid #f2f5f9; */
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #f2f5f9;
-    border-left-color: #f2f5f9;
+    border-bottom-color: #fcfcfc;
+    border-left-color: #fcfcfc;
   }
   100% {
     width: 100%;
     height: 100%;
-/*border: 2px solid #f2f5f9; */
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #f2f5f9;
-    border-left-color: #f2f5f9;
+    border-bottom-color: #fcfcfc;
+    border-left-color: #fcfcfc;
   }
 }
 /********* Page formulaire de contact***************/
-.contactform{
-
-}
-#form {
+#form{
   position: relative;
   width: 500px;
   margin: 50px auto 100px auto;
 }
-input {
+input{
   width: 470px;
   height: 50px;
   padding: 0px 15px 0px 15px;
   background: transparent;
-  color: #f2f5f9;
-  border: solid 1px #f2f5f9;
+  color: #fcfcfc;
+  border: solid 1px #fcfcfc;
   border-bottom: none;
   }
-textarea {
+textarea{
   width: 470px;
   max-width: 470px;
   height: 110px;
@@ -205,16 +199,19 @@ textarea {
   padding: 15px;
   background: transparent;
   outline: none;
-  color: #f2f5f9;
-  border: solid 1px #f2f5f9;
+  color: #fcfcfc;
+  border: solid 1px #fcfcfc;
 }
-  #submit {
+  #submit{
   width: 502px;
   padding: 0;
   margin: -5px 0px 0px 0px;
-  color: #f2f5f9;
+  color: #fcfcfc;
   outline:none;
   cursor: pointer;
-  border: solid 1px #f2f5f9;
+  border: solid 1px #fcfcfc;
   border-top: none;
+}
+::placeholder{
+  color: #fcfcfc;
 }
